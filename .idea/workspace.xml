@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a5045ff-f77d-47dc-96ed-8ae8be86cd22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Avalon/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Avalon/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Avalon/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Avalon/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Avalon/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Avalon/Avalon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Avalon/Recording.avi" afterDir="false" />
+    <list default="true" id="0a5045ff-f77d-47dc-96ed-8ae8be86cd22" name="Changes" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Avalon/Ava.py" beforeDir="false" afterPath="$PROJECT_DIR$/Avalon/Ava.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Avalon/Recording.avi" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +35,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -58,11 +59,27 @@
       <option name="presentableId" value="Default" />
       <updated>1705435767922</updated>
       <workItem from="1705435769407" duration="53000" />
-      <workItem from="1705436461986" duration="48000" />
+      <workItem from="1705436461986" duration="1043000" />
+      <workItem from="1705437519279" duration="255000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>
