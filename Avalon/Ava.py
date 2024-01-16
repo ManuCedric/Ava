@@ -2,6 +2,7 @@
 import pyautogui
 import cv2
 import numpy as np
+#pip install pyautogui; pip install opencv-python; pip install numpy
 
 # Specify resolution
 resolution = (1920, 1080)
@@ -25,31 +26,31 @@ out = cv2.VideoWriter(filename, codec, fps, resolution)
 cv2.namedWindow("Live", cv2.WINDOW_NORMAL)
 
 # Resize this window
-cv2.resizeWindow("Live", 1920, 1080)
+cv2.resizeWindow("Live", 960, 540)
 
 stop = True
 while stop:
+    while cv2.getWindowProperty('Live', 0) >= 0:
+        # Take screenshot using PyAutoGUI
+        img = pyautogui.screenshot()
 
-    # Take screenshot using PyAutoGUI
-    img = pyautogui.screenshot()
+        # Convert the screenshot to a numpy array
+        frame = np.array(img)
 
-    # Convert the screenshot to a numpy array
-    frame = np.array(img)
+        # Convert it from BGR(Blue, Green, Red) to
+        # RGB(Red, Green, Blue)
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
-    # Convert it from BGR(Blue, Green, Red) to
-    # RGB(Red, Green, Blue)
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        # Write it to the output file
+        out.write(frame)
 
-    # Write it to the output file
-    out.write(frame)
+        # Optional: Display the recording screen
+        cv2.imshow('Live', frame)
 
-    # Optional: Display the recording screen
-    cv2.imshow('Live', frame)
+        # Stop recording when we press 'q'
+        if cv2.waitKey(1) & 0xFF == ord('q'):
 
-    # Stop recording when we press 'q'
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-
-        break
+            break
 
 # Release the Video writer
 out.release()
