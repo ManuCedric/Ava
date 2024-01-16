@@ -2,6 +2,13 @@
 projet pour albion
 Le but etant de creer un programme pour automatiser la catographie des maps routes Avaloniennes
 
+dependance:
+pip installer pytesseract
+pip install opencv-python
+pip install pyautogui
+pip install numpy
+
+
 _ Trouver un moyen de record le screen
 • Possibiliter trouver sur geeks for geeks.org (à tester)
 .Trouver une façon de screen en même temps
